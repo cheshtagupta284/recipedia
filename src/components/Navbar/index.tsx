@@ -16,7 +16,7 @@ export default function NavBar() {
   return (
     <>
       <Navbar className="bg-body-tertiary">
-        <Container>
+        <Container fluid>
           <Navbar.Brand href="#home" className="d-flex align-items-center">
             <img
               alt=""
