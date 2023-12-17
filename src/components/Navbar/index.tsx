@@ -4,9 +4,9 @@ import Container from "react-bootstrap/esm/Container";
 import Form from "react-bootstrap/esm/Form";
 import Navbar from "react-bootstrap/esm/Navbar";
 import Offcanvas from "react-bootstrap/esm/Offcanvas";
+import logo from "../../assets/logo.png";
 import "./style.css";
 // import menu from "bootstrap-icons";
-
 export default function NavBar() {
   const [show, setShow] = useState(false);
 
@@ -20,7 +20,7 @@ export default function NavBar() {
           <Navbar.Brand href="#home" className="d-flex align-items-center">
             <img
               alt=""
-              src="src/assets/logo.png"
+              src={logo}
               width="30"
               height="30"
               className="d-inline-block"
