@@ -1,6 +1,7 @@
 .header {
   color: white;
-  background: url("./../../assets/avocado.jpg");
+  background: linear-gradient(to bottom, #798a007d, #b9c46800),
+    url("./../../assets/avocado.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
