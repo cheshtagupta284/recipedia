@@ -1,4 +1,15 @@
-.sidebar {
-  background-color: green;
+.header {
   color: white;
+  background: linear-gradient(to bottom, #798a007d, #b9c46800),
+    url("./../../assets/avocado.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-heading1 {
+  font-size: calc(3rem + 1.5vw);
 }
