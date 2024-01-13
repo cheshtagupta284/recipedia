@@ -1,5 +1,4 @@
-import React from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import MealSmall from "../../components/Meals/MealSmall";
 
 interface IFeaturedMeals {

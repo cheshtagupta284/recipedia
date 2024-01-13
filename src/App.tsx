@@ -1,12 +1,11 @@
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { createContext, useCallback, useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
 import NavBar from "./components/Navbar";
 import Home from "./pages/Home";
-import logo from "./assets/logo.png";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
-import Footer from "./components/Footer";
-import { Route, Routes } from "react-router-dom";
 import MealPage from "./pages/Meal";
-import { createContext, useCallback, useEffect, useState } from "react";
 import {
   getAllCategories,
   getAreasList,

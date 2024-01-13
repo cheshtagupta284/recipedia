@@ -1,20 +1,17 @@
+import { format } from "date-fns/format";
+import { isBefore } from "date-fns/isBefore";
+import { useContext, useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
-import "./style.css";
 import Button from "react-bootstrap/esm/Button";
+import { CommonDataContext } from "../../App";
 import {
-  getAllCategories,
   getMealByCategory,
   getMealById,
   getRandomMeal,
 } from "../../services/services";
-import { useContext, useEffect, useState } from "react";
-import { isBefore } from "date-fns/isBefore";
-import { format } from "date-fns/format";
-import MealSmall from "../../components/Meals/MealSmall";
-import { Card, Col, Row } from "react-bootstrap";
-import { CommonDataContext } from "../../App";
 import FeaturedMeals from "./FeaturedMeals";
 import MealOfTheDay from "./MealOfTheDay";
+import "./style.css";
 
 interface IfeaturedMeals {
   title: string;
@@ -25,7 +22,7 @@ export default function Home() {
   const [randomMeal, setRandomMeal] = useState<Record<string, string | null>>();
   const [featuredMeals, setFeaturedMeals] = useState<Array<IfeaturedMeals>>([]);
 
-  const { allCategories, getData } = useContext(CommonDataContext);
+  const { allCategories } = useContext(CommonDataContext);
 
   const setRandomMealFromService = async () => {
     if (randomMeal) {

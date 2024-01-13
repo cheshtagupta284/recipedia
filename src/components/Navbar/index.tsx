@@ -1,18 +1,13 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
+import { InputGroup } from "react-bootstrap";
 import Button from "react-bootstrap/esm/Button";
 import Container from "react-bootstrap/esm/Container";
 import Form from "react-bootstrap/esm/Form";
 import Navbar from "react-bootstrap/esm/Navbar";
 import Offcanvas from "react-bootstrap/esm/Offcanvas";
+import { CommonDataContext } from "../../App";
 import logo from "../../assets/logo.png";
 import "./style.css";
-import {
-  getAllCategories,
-  getAreasList,
-  getIngredientsList,
-} from "../../services/services";
-import { InputGroup } from "react-bootstrap";
-import { CommonDataContext } from "../../App";
 
 export default function NavBar() {
   const [show, setShow] = useState(false);
