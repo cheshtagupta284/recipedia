@@ -1,0 +1,15 @@
+.mealsmall-link {
+  text-decoration: none;
+}
+
+.mealsmall {
+  height: 100% !important;
+}
+
+.mealsmall.card {
+  border: none;
+}
+
+.mealsmall img {
+  border-radius: 50%;
+}

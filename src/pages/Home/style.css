@@ -1,15 +1,62 @@
 .header {
   color: white;
-  background: linear-gradient(to bottom, #798a007d, #b9c46800),
-    url("./../../assets/avocado.jpg");
+  background: url("./../../assets/hero.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 50vh;
+  background-attachment: fixed;
+  height: 90vh;
   display: flex;
   align-items: center;
 }
 
 .hero-heading1 {
   font-size: calc(3rem + 1.5vw);
+}
+
+.hero-content {
+  backdrop-filter: blur(0.8rem);
+  padding: 2rem;
+  background: #06000033;
+  border-radius: 1rem;
+}
+
+section {
+  overflow: auto;
+  max-width: 100vw;
+}
+
+.home-section {
+  padding-top: 4rem;
+  min-height: 100vh;
+}
+
+.home-section.mealoftheday {
+  height: 100vh;
+}
+
+.home-section.mealoftheday .container {
+  height: 100%;
+}
+
+.mealofthday-image {
+  background: url("./../../assets/pot.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mealoftheday a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.mealoftheday a:hover {
+  text-decoration: underline !important;
+}
+
+.instructions {
+  max-height: 290px;
+  overflow: hidden;
+  margin-bottom: 2rem;
 }
