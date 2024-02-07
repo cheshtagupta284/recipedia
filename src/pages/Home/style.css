@@ -46,11 +46,6 @@ section {
   background-repeat: no-repeat;
 }
 
-.mealoftheday a {
-  text-decoration: none !important;
-  color: black !important;
-}
-
 .mealoftheday a:hover {
   text-decoration: underline !important;
 }
@@ -59,4 +54,8 @@ section {
   max-height: 290px;
   overflow: hidden;
   margin-bottom: 2rem;
+}
+
+.featured-meals {
+  background: var(--baby-powder);
 }

@@ -1,0 +1,12 @@
+:root {
+  --baby-powder: #f7f7f2ff;
+  --beige: #e4e6c3ff;
+  --moss-green: #899878ff;
+  --eerie-black: #222725ff;
+  --night: #121113ff;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--moss-green) !important;
+}
