@@ -8,7 +8,7 @@ interface IFeaturedMeals {
 export default function FeaturedMeals(props: IFeaturedMeals) {
   const { featuredMeals } = props;
   return (
-    <section className="home-section mx-auto text-center">
+    <section className="home-section featured-meals mx-auto text-center">
       <Container>
         <h2 className="mb-1">Featured Meals</h2>
         {featuredMeals?.map((featuredMeal: any) => {

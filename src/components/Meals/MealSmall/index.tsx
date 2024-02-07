@@ -16,7 +16,9 @@ function MealSmall({ id, name, thumb }: MealSmallProps) {
   return (
     <Link to={`/meal/${id}`} className="mealsmall-link">
       <Card className="mealsmall" id={`meal-${id}`}>
-        <Card.Img variant="top" src={thumb} />
+        <div>
+          <Card.Img variant="top" src={thumb} className="p-4" />
+        </div>
         <Card.Body>
           <Card.Title>{name}</Card.Title>
         </Card.Body>

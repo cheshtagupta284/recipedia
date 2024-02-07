@@ -41,8 +41,8 @@ export default function MealOfTheDay(props: IMealOfTheDay) {
                   0,
                   Math.min(3, meal.Instructions.split("\r\n\r\n").length)
                 )
-                .map((instruction: string) => (
-                  <p>{instruction}</p>
+                .map((instruction: string, index: number) => (
+                  <p key={index}>{instruction}</p>
                 ))}
             </div>
             <Link to={`/meal/${meal.id}`}>Read More ...</Link>
